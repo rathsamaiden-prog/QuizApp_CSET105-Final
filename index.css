@@ -99,3 +99,10 @@ body{
     height: 60px;
     border-radius: 50px;
 }
+
+    .correct-answer {
+        background-color: green;
+    }
+    .wrong-answer {
+        background-color: red;
+    }
