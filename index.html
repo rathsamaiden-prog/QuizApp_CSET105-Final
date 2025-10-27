@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="background-circle"></div>
+    
+    <div id="quizView">
+        <div class="questionBlock">
+            <div id="quizTracker"><div>1</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">01</span></h1>
+                <p class="quizTitle">Test Title</p>
+                <h2 class="questionField">"How much could a wood chuck chuck?"</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options" id="option-1" data-correct="true">
+                    <span class="answers">Test Op 1</span>
+                    <input type="radio" class="select" name="selectBtn" value="1">
+                </label>
+                <label class="options" id="option-2">
+                    <span class="answers">Test Op 2</span>
+                    <input type="radio" class="select" name="selectBtn" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers" id="option-3">Test Op 3</span>
+                    <input type="radio" class="select" name="selectBtn" value="3">
+                </label>
+                <label class="options" id="option-4">
+                    <span class="answers">Test Op 4</span>
+                    <input type="radio" class="select" name="selectBtn" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>2</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">02</span></h1>
+                <p class="quizTitle">Math Check</p>
+                <h2 class="questionField">What is 2 + 2?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">3</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">4</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">5</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">22</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>3</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>4</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>5</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>6</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>7</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>8</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>9</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+
+        <div class="questionBlock" style="display:none">
+            <div id="quizTracker"><div>10</div></div>
+            <div class="questionContainer">
+                <h1>Question <span class="qNum" style="color: chocolate;">03</span></h1>
+                <p class="quizTitle">Colors</p>
+                <h2 class="questionField">Which color is a mix of red and blue?</h2>
+            </div>
+            <div class="answersContainer">
+                <label class="options">
+                    <span class="answers">Green</span>
+                    <input type="radio" class="select" name="q" value="1">
+                </label>
+                <label class="options" data-correct="true">
+                    <span class="answers">Purple</span>
+                    <input type="radio" class="select" name="q" value="2">
+                </label>
+                <label class="options">
+                    <span class="answers">Orange</span>
+                    <input type="radio" class="select" name="q" value="3">
+                </label>
+                <label class="options">
+                    <span class="answers">Brown</span>
+                    <input type="radio" class="select" name="q" value="4">
+                </label>
+            </div>
+        </div>
+        <button id="submit">SUBMIT</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
