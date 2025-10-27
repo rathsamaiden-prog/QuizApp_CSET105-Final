@@ -1,12 +1,13 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    height: 125vh;
     box-sizing: border-box;
 }
 #background-circle{
     z-index: -1;
-    margin-bottom: -35vh;
-    height: 40vh;
+    margin-bottom: -30vh;
+    height: 35vh;
     background-color: rgb(88, 54, 222);
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
@@ -14,22 +15,16 @@ body{
 #background{
     background-color: black;
     z-index: -2;
-    height: 105vh;
-    margin-bottom: -105vh;
-}
-#tracker{
-    display: flex;
-    width: 100vh;
-    margin: auto;
-}
-#trackerContainer{
-    background-color: rgb(155, 129, 207);
-    height: 10px;
-    width: 40%;
-    margin: 2% 0 0 5%;
-    border-radius: 15px;
+    height: 125vh;
+    margin-bottom: -125vh;
 }
 #quizView{
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questionBlock{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,17 +33,30 @@ body{
     height: auto;
 }
 #quizTracker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(15, 11, 37);
     color: white;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    text-align: center;
     border: 6px solid rgb(88, 54, 222);
     z-index: 1;
     margin-bottom: -5%;
 }
-#questionContainer{
+#quizTracker div{
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    border-radius: 50%;
+    width: 75%;
+    height: 75%;
+}
+.questionContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +67,10 @@ body{
     padding-top: 50px;
     border-radius: 25px;
 }
-#answersContainer{
+.answersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 4% 0 5% 0;
     width: 100%;
 }
@@ -69,18 +80,11 @@ body{
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 3%;
     border-radius: 20px;
-}
-
-.optionSelected{
-    border: 5px solid rgb(133, 132, 132);
-    background-color: rgb(79, 78, 78);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3%;
-    border-radius: 20px;
+    height: 7vh;
+    width: 90%;
 }
 .answers{
     width: fit-content;
@@ -90,18 +94,18 @@ body{
     appearance: none;
     width: 40px;
     height: 40px;
-    margin: 2.2% 3% 0 0;
+    margin-right: 3%;
     border: 2px solid rgb(102, 102, 102);
     background-color: rgb(63, 63, 63);
     border-radius: 25px;
     cursor: pointer;
 }
 .select:checked{
-    background-color: chocolate;
-    border-color: chocolate;
+    background-color: rgb(65, 39, 39);
+    border: 3px solid rgb(48, 48, 48);
 }
 #submit{
-    width: 50%;
+    width: 30%;
     height: 60px;
     border-radius: 50px;
 }
