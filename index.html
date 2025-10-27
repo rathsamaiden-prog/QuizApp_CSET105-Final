@@ -7,9 +7,32 @@
     <title>Quiz App</title>
 </head>
 <body>
-    <div id="background-circle"></div>
     <div id="background"></div>
+    <div id="background-circle"></div>
+    
     <div id="quizView">
+        <div id="quizTracker">20</div>
+        <div id="questionContainer">
+            <h1>Question <span id="qNum" style="color: chocolate;">01</span></h1>
+            <p id="quizTitle">Test Title</p>
+            <h2 id="questionField">"How much could a wood chuck chuck?"</h2>
+        </div>
+        <div id="answersContainer">
+            <div class="options" id="option-1">
+                <h3 class="answers">Test Op 1</h3>
+                <input type="radio" class="select" name="selectBtn">
+            </div>
+            <div class="optionSelected" id="option-2">
+                <h3 class="answers">Test Op 2</h3>
+                <input type="radio" class="select" name="selectBtn">
+            </div>
+            <div class="options" id="option-3">
+                <h3 class="answers">Test Op 3</h3>
+                <input type="radio" class="select" name="selectBtn">
+            </div>
+            <div class="options" id="option-4">
+                <h3 class="answers">Test Op 4</h3>
+                <input type="radio" class="select" name="selectBtn">
         <div id="timer">20</div>
 
         <!-- Question blocks defined in HTML; script will show/hide them in order -->
