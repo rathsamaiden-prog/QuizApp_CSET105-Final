@@ -72,6 +72,7 @@ body{
     margin-bottom: 3%;
     border-radius: 20px;
 }
+
 .optionSelected{
     border: 5px solid rgb(133, 132, 132);
     background-color: rgb(79, 78, 78);
@@ -96,11 +97,17 @@ body{
     cursor: pointer;
 }
 .select:checked{
-    background-color: orange;
+    background-color: chocolate;
+    border-color: chocolate;
 }
-
 #submit{
     width: 50%;
     height: 60px;
     border-radius: 50px;
+}
+.correct-answer {
+    background-color: green;
+}
+.wrong-answer {
+    background-color: red;
 }
