@@ -6,6 +6,7 @@ if (!pages || pages.length === 0) {
 }
 
 let currentIndex = 0;
+let correctAnswers = 0; 
 
 function showPage(index) {
     pages.forEach((p, i) => {
@@ -95,6 +96,7 @@ function gradeCurrentPage(page) {
 
     if (selectedOpt && selectedOpt.dataset.correct === 'true') {
         selectedOpt.classList.add('correct-answer');
+        correctAnswers++; 
     } else {
         if (selectedOpt) selectedOpt.classList.add('wrong-answer');
         if (correctOpt) correctOpt.classList.add('correct-answer');
@@ -167,13 +169,19 @@ currentIndex += 1;
         clearTimer();
         const quizView = document.getElementById('quizView');
         if (quizView) {
-        quizView.innerHTML = '<h2>Quiz Complete</h2><p>You finished the quiz.</p>';
+            quizView.innerHTML = `
+                <h2>Quiz Complete</h2>
+                <p>You got ${correctAnswers} out of ${pages.length} questions correct!</p>
+                <p>Score: ${Math.round((correctAnswers / pages.length) * 100)}%</p>
+                <button id="submit" style="margin-top: 20px;">RESTART</button>
+            `;
+            const startBtn = document.getElementById('submit');
+            if (startBtn) {
+                startBtn.addEventListener('click', () => window.location.reload());
+            }
         }
-        submit.textContent = 'Restart';
-        submit.dataset.mode = 'restart';
-        submit.addEventListener('click', () => {
-        if (submit.dataset.mode === 'restart') window.location.reload();
-        });
+        submit.remove();
+        submit.remove();
     }
     });
 }
